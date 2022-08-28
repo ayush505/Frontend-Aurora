@@ -1,0 +1,181 @@
+/* @font-face {
+  font-family: 'SkullAndVoid';
+  src: local('SkullAndVoid'), url('../../assets/fonts/SkullAndVoid-Ywg2.ttf');
+} */
+
+.sponsor_parent_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  font-size: 22px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.sponsor_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+
+  background: white;
+}
+.sponsor_card_parent_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 10em;
+  height: 12em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.titleSection > .sponsor_card_parent_container {
+  width: 13em;
+  height: auto;
+  margin: 1em;
+}
+.sponsor_card_img {
+  width: 100%;
+}
+.sponsor_heading {
+  font-size: 0.8em;
+}
+.sponsor_img_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 90%;
+}
+.sponsor_heading_h1 {
+  /* font-family: 'SkullAndVoid'; */
+  font-size: 4em;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+}
+.sponsor_heading_h2 {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.logo {
+  width: 3.5em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.head_section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: white;
+  margin-bottom: 0em;
+  margin-top: 3em;
+}
+.headSection {
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.headCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headHeading {
+  font-size: 1.2em;
+  margin: 0;
+}
+@media (max-width: 1366px) {
+  .sponsor_parent_container {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1060px) {
+  .sponsor_heading_h1 {
+    font-size: 3em;
+    letter-spacing: 0.3em;
+  }
+}
+@media (max-width: 720px) {
+  .sponsor_parent_container {
+    font-size: 14px;
+  }
+  .sponsor_section {
+    width: 100%;
+  }
+  .sponsor_heading_h1 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    margin-top: 2em;
+  }
+}
+@media (max-width: 500px) {
+  .sponsor_parent_container {
+    font-size: 10px;
+  }
+  .sponsor_section {
+    width: 100%;
+  }
+  .sponsor_heading_h1 {
+    margin-top: 1em;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+  }
+  .sponsor_heading_h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+  }
+  .logo {
+    width: 6em;
+  }
+  .sponsor_card_parent_container {
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 13em;
+    height: 17em;
+  }
+  .titleSection > .sponsor_card_parent_container {
+    width: 24em;
+    height: 30em;
+  }
+  .sponsor_heading {
+    font-size: 1.6em;
+  }
+  .sponsor_desc {
+    font-size: 1.4em;
+  }
+
+  .head_section {
+    width: 90%;
+    margin-bottom: 1.5em;
+    margin-top: 5em;
+  }
+  .headSection {
+    font-size: 1.2em;
+  }
+  .head_section > h3 {
+    font-size: 1.8em;
+  }
+  .headHeading {
+    font-size: 1.2em;
+  }
+}

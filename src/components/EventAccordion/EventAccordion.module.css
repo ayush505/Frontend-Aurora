@@ -1,0 +1,93 @@
+.eventAccordion {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  margin-top: 5px;
+  transition: height 0.3s ease-in;
+  height: 30px;
+}
+.headSection, .bodySection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.eventAccordion.open {
+  background: white;
+  color: black;
+}
+.eventAccordion.open .bodySection {
+  overflow: hidden;
+  height: calc(100% - 70px);
+  visibility: visible;
+  opacity: 1;
+}
+.bodySection {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  scrollbar-color: grey black;
+  transition: all 0.3s ease-in;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: black; 
+  /* border-radius: 10px; */
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+}
+
+.headSectionBtn {
+  border: 0;
+  background: transparent;
+  font-family: 'SkullAndVoid';
+  font-size: 1.7em;
+  width: 90%;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.eventAccordion.open .headSectionBtn {
+  font-size: 4em;
+  height: 70px;
+  cursor: default;
+  color: black;
+}
+
+@media only screen and (max-width: 1366px) {
+  .eventAccordion {
+    border: 2px solid black;
+    height: 22px;
+  }
+  .eventAccordion.open .headSectionBtn {
+    font-size: 3em;
+    height: 50px;
+  }
+  .eventAccordion.open .bodySection {
+    height: calc(100% - 50px);
+  }
+  .headSectionBtn {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .eventAccordion {
+    height: 30px;
+  }
+  .eventAccordion.open .headSectionBtn {
+    font-size: 3em;
+    height: 50px;
+  }
+  .eventAccordion.open .bodySection {
+    height: calc(100% - 50px);
+  }
+  .headSectionBtn {
+    font-size: 2.2em;
+  }
+}
